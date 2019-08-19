@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Semester registration</title>
+</head>
+
+<body>
+    <form action="#">
+        First name:  <input type="text" id="fnam"><br>
+        Middle name:<input type="text" id="fnam"><br>
+        Last name: <input type="text" id="fnam"><br>
+        Branch: <select name="branch">
+            <option value="Options">select</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Chemical Engineering">Chemical Engineering</option>
+            <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+            <option value="Electrical and Telecommunication Engineering">Electrical and Telecommunication Engineering</option>
+            <option value="Informatiom Technology">Informatiom Technology</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Metallury and Materials Engineering">Metallury and Materials Engineering</option>
+            <option value="Production Engineering">Production Engineering</option>
+            </select><br>
+            Gender:<input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female<br>
+            Registration No: <input type="number"><br>
+            Semester: <select name="semester">
+                    <option value="option">select</option>
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                    <option value="4th">4th</option>
+                    <option value="5th">5th</option>
+                    <option value="6th">6th</option>
+                    <option value="7th">7th</option>
+                    <option value="8th">8th</option>
+                </select><br>
+                Category: <input type="radio" name="cat" value="Regular boarder">Regular boarder
+                <input type="radio" name="cat" value="Regular dayscholar">Regular dayscholar
+                <input type="radio" name="gender" value="SSC">SSC<br>
+                Backlogs: <input type="radio" name="cat" value="Yes">Yes
+                <input type="radio" name="cat" value="No" checked>No
+                <br>Bank Details:
+                IFSC:
+                
+                <br><input type="submit" onclick="check()">
+
+                
+
+
+
+
+    </form>
+</body>
+<script>
+    function check(){
+    var fname=document.getElementById("fnam");
+            var Number = /^[0-9]+$/;
+            if(fname.value.match(Number))
+             {
+                alert("please enter only alphabets in name field");
+            }
+}
+</script>
+</html>
