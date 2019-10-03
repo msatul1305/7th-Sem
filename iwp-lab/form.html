@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <form action="#">
-        First name:  <input type="text" id="fnam"><br>
-        Middle name:<input type="text" id="fnam"><br>
-        Last name: <input type="text" id="fnam"><br>
-        Branch: <select name="branch">
-            <option value="Options">select</option>
+    <form action="#" method="POST">
+        First name:  <input type="text" id="fname" required><br>
+        Middle name:<input type="text" id="mname"><br>
+        Last name: <input type="text" id="lname" required><br>
+        Branch: <select name="branch" required>
+            <option value="">select</option>
             <option value="Civil Engineering">Civil Engineering</option>
             <option value="Chemical Engineering">Chemical Engineering</option>
             <option value="Computer Science and Engineering">Computer Science and Engineering</option>
@@ -27,11 +27,11 @@
             <option value="Metallury and Materials Engineering">Metallury and Materials Engineering</option>
             <option value="Production Engineering">Production Engineering</option>
             </select><br>
-            Gender:<input type="radio" name="gender" value="male">Male
+            Gender:<input type="radio" name="gender" value="male" required>Male
             <input type="radio" name="gender" value="female">Female<br>
-            Registration No: <input type="number"><br>
-            Semester: <select name="semester">
-                    <option value="option">select</option>
+            Registration No: <input type="number" required><br>
+            Semester: <select name="semester" required>
+                    <option value="">select</option>
                     <option value="1st">1st</option>
                     <option value="2nd">2nd</option>
                     <option value="3rd">3rd</option>
@@ -41,11 +41,11 @@
                     <option value="7th">7th</option>
                     <option value="8th">8th</option>
                 </select><br>
-                Category: <input type="radio" name="cat" value="Regular boarder">Regular boarder
+                Category: <input type="radio" name="cat" value="Regular boarder" required>Regular boarder
                 <input type="radio" name="cat" value="Regular dayscholar">Regular dayscholar
-                <input type="radio" name="gender" value="SSC">SSC<br>
-                Backlogs: <input type="radio" name="cat" value="Yes">Yes
-                <input type="radio" name="cat" value="No" checked>No
+                <input type="radio" name="cat" value="SSC">SSC<br>
+                Backlogs: <input type="radio" name="back" value="Yes" required>Yes
+                <input type="radio" name="back" value="No" checked>No
                 <br>Bank Details:
                 IFSC:
                 
@@ -60,12 +60,25 @@
 </body>
 <script>
     function check(){
-    var fname=document.getElementById("fnam");
-            var Number = /^[0-9]+$/;
-            if(fname.value.match(Number))
+    var fname=document.getElementById("fname");
+    // var mname=document.getElementById("mname");
+    var lname=document.getElementById("lname");
+            var Letters = /^[A-Za-z]+$/;
+            if(fname.value.match(Letters))
              {
-                alert("please enter only alphabets in name field");
+                if(lname.value.match(Letters)){
+                    return true;
+                 }
+                else{
+                        alert("please enter only alphabets in name field");
+                        return false;
+                    }
             }
+            else{
+                alert("please enter only alphabets in name field");
+                return false;
+            }
+            
 }
 </script>
 </html>
