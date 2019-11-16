@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head> 
+<body>
+    <img src="OFFbulb.jpg" alt="" ondblclick="call()" id="bulb" style="display: block;">
+    <button onclick="call()">  Show/Hide</button>
+    <!-- <button onclick="call()">Hide</button> -->
+
+    <script>
+        function call(){
+            var val=document.getElementById("bulb");
+            console.log(val.style.display);
+            if(val.style.display=="none"){
+                val.style.display="block";
+                // console.log(val.src);
+            }
+            else{
+                
+                val.style.display="none";
+                // console.log(val.src);
+            }
+            
+        }
+    </script>
+</body>
+</html>
+
+
+
+ <!-- 
+                    1.onload
+                    2.ondrag
+                    3.ondragend    [end of the drag]
+                    4.onmouseout
+                    5.
+                -->

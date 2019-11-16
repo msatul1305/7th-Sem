@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Switch</title>
+</head>
+<body>
+    <img id="im1" src="img1.png" alt="noimg" height="500px" width="500px" onclick="swa()">
+    <img id="im2" src="img2.png" alt="noimg2"height="500px" width="500px" onclick="swa()">
+</body>
+            <script>
+                function swa(){
+                    var x="img1.png";
+                    var y="img2.png";
+                    
+                    if(document.getElementById("im1").src.match("img1.png")){
+                        document.getElementById("im1").src=y;
+                        document.getElementById("im2").src=x;
+                    }
+                    else{
+                        document.getElementById("im1").src=x;
+                        document.getElementById("im2").src=y;
+                    }
+                        
+                }
+
+            </script>
+</html>

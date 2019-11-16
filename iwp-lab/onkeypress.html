@@ -1,0 +1,29 @@
+<html>
+
+<body>
+
+<form method="post" name="my_form">
+
+The key you pressed was:
+<input type="text" name="key_display" size="2" onchange = "show_key(this)"/>
+
+</form>
+
+<script type="text/javascript">
+
+function show_key ( fieldname )
+{
+    if ( fieldname ==NULL)
+    {
+        alert("enter name");
+    }
+
+    // document.my_form.key_display.value
+    // = String.fromCharCode ( the_key );
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <button onclick="call()" id="bulb">Click me</button> -->
+    <form action="" name="form">
+        Name:<input type="text" id="name" name="fname">
+        Year: <input type="number" id="year">
+        <input type="submit" onclick="call()">
+
+    </form>
+
+    <script>
+        function call(){
+            x=document.forms["form"]["fname"].value;
+            y=document.getElementById("year").value;
+            
+            document.write(x+"<br>"+y);
+            document.write(y);
+
+            
+        }
+    </script>
+</body>
+</html>

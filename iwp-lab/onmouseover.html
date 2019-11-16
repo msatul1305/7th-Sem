@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <img src="OFFbulb.jpg" alt="" onmouseover="call()" id="bulb">
+
+    <script>
+        function call(){
+            var val=document.getElementById("bulb");
+            console.log(val.src);
+            if(val.src=="http://127.0.0.1:5500/ONbulb.jpg"){
+                document.getElementById("bulb").src="OFFbulb.jpg";
+                // console.log(val.src);
+            }
+            else{
+                
+                document.getElementById("bulb").src="ONbulb.jpg";
+                // console.log(val.src);
+            }
+            
+        }
+    </script>
+</body>
+</html>
