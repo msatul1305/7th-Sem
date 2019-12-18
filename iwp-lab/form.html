@@ -29,7 +29,7 @@
             </select><br>
             Gender:<input type="radio" name="gender" value="male" required>Male
             <input type="radio" name="gender" value="female">Female<br>
-            Registration No: <input type="number" required><br>
+            Registration No: <input type="number" id="reg" required><br>
             Semester: <select name="semester" required>
                     <option value="">select</option>
                     <option value="1st">1st</option>
@@ -62,6 +62,7 @@
 </body>
 <script>
     function check(){
+        var reg=document.getElementById("reg");
     var fname=document.getElementById("fname");
     // var mname=document.getElementById("mname");
     var lname=document.getElementById("lname");
@@ -80,6 +81,9 @@
                 alert("please enter only alphabets in name field");
                 return false;
             }
+        if(reg.value<=0){
+        alert("enter correct reg no");
+        }
             
 }
 </script>
