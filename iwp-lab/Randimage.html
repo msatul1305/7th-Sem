@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Image Generator</title>
+</head>
+<body>
+    Click On Image to generate new image<img src="" alt="na" id="imag" onclick="generat()">
+    
+</body>
+<script>
+    function generat(){
+        var arr=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+        var x= Math.floor((Math.random() * 5));
+        var img =arr[x];
+        console.log(x);
+        console.log(arr[x]);
+         document.getElementById("imag").src=img;
+        // return img;
+    }
+</script>
+</html>
