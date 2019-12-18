@@ -9,6 +9,6 @@ Image Switch - https://msatul1305.github.io/7th-Sem/iwp-lab/img_switch.html <br>
 Bulb on(onclick event) - https://msatul1305.github.io/7th-Sem/iwp-lab/index.html <br>
 TAke input from form and display it in another page - https://msatul1305.github.io/7th-Sem/iwp-lab/index1.html <br>
 Show/Hide Image - https://msatul1305.github.io/7th-Sem/iwp-lab/test.html  <br>
-
+Generate Random image from pool of images : https://msatul1305.github.io/7th-Sem/iwp-lab/Randimage.html <br>
 
 
