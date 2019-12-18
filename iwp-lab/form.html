@@ -67,7 +67,10 @@
     // var mname=document.getElementById("mname");
     var lname=document.getElementById("lname");
             var Letters = /^[A-Za-z]+$/;
-            if(fname.value.match(Letters))
+            if(reg.value<=0){
+            alert("enter correct reg no");
+            }
+            else if(fname.value.match(Letters))
              {
                 if(lname.value.match(Letters)){
                     return true;
@@ -81,9 +84,7 @@
                 alert("please enter only alphabets in name field");
                 return false;
             }
-        if(reg.value<=0){
-        alert("enter correct reg no");
-        }
+        
             
 }
 </script>
