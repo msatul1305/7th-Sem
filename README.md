@@ -11,5 +11,5 @@ Take input from form and display it in another page - https://msatul1305.github.
 Show/Hide Image - https://msatul1305.github.io/7th-Sem/iwp-lab/test.html  <br>
 Generate Random image from pool of images : https://msatul1305.github.io/7th-Sem/iwp-lab/Randimage.html <br>
 Events and Event Handlers : https://msatul1305.github.io/7th-Sem/iwp-lab/events.html <br>
-
+Extended Events : https://msatul1305.github.io/7th-Sem/iwp-lab/events2.html <br>
 
