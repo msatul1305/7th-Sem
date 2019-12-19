@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<TITLE>Extended Events</TITLE>
+</HEAD>
+<BODY onhelp='alert("Going to help now")'
+ondragdrop='alert("Drag and drop.")'
+onmove='alert("Moving")'
+onresize='alert("Resizing")'>
+<H1 ALIGN="CENTER">Extended Events Example</H1>
+<UL>
+<LI>onbounce, onfinish, onstart: Watch marquee events fire.
+(IE4 Only)<BR>
+<MARQUEE BEHAVIOR="ALTERNATE"
+BGCOLOR="yellow" LOOP="2" WIDTH="400"
+onstart='alert("Marquee start!")'
+onbounce='alert("Bounced!")'
+onfinish='alert("Marquee done!")'>
+Bouncing message
+</MARQUEE>
+<BR><BR>
+<LI>ondragdrop: Try dragging a file onto the browser window.
+(N4 Only)
+<LI>ondragstart: Try selecting text and dragging. (IE4 Only)<BR>
+<FORM>
+<TEXTAREA ROWS="1" COLS="80"
+ondragstart='alert("Going to drag")'>
+Select this text and attempt to drag
+</TEXTAREA>
+</FORM><BR>
+<LI>onhelp: Click in window and press F1 key for help. (IE4 Only)
+<LI>onmove: Try moving the browser window.
+ (N4 Only)
+ <LI>onresize: Try resizing the window.
+    <LI>onscroll: Scroll the textarea. (IE4 Only)<BR>
+    <FORM>
+    <TEXTAREA ROWS="1" COLS="80" onscroll='alert("Scrolled")'>
+    Type some text in here and scroll this.
+    </TEXTAREA>
+    </FORM><BR>
+    <LI>onselectstart:
+    <SPAN onselectstart='alert("Select starting")'>
+    Try selecting this text. (IE4 Only)</SPAN>
+    </UL>
+    </BODY>
+    </HTML>
+    
