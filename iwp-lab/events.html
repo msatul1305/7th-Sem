@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>HTML 4.0 Events</TITLE>
+</HEAD>
+<BODY onload='alert("Event demo loaded")'
+onunload='alert("Leaving demo")'>
+<H1 ALIGN="CENTER">HTML 4.0 Events</H1>
+<FORM onreset='alert("Form reset")'
+onsubmit='alert("Form submit");return false;'>
+<UL>
+<LI>onblur: <INPUT TYPE="TEXT" VALUE="Click into field and then leave"
+SIZE="40" onblur='alert("Lost focus")'><BR><BR>
+<LI>onclick: <INPUT TYPE="BUTTON" VALUE="Click Me"
+onclick='alert("Button click")'><BR><BR>
+<LI>onchange: <INPUT TYPE="TEXT" VALUE="Change this text then leave"
+SIZE="40" onchange='alert("Changed")'><BR><BR>
+<LI>ondblclick: <INPUT TYPE="BUTTON" VALUE="Double-click Me"
+ondblclick='alert("Button double-clicked")'>
+<BR><BR>
+<LI>onfocus: <INPUT TYPE="TEXT" VALUE="Click into field"
+onfocus='alert("Gained focus")'><BR><BR>
+    <LI>onkeydown: <INPUT TYPE="TEXT"
+        VALUE="Press key and release slowly here"
+        SIZE="40"
+        onkeydown='alert("Key down")'><BR><BR>
+        <LI>onkeypress: <INPUT TYPE="TEXT" VALUE="Type here" SIZE="40"
+        onkeypress='alert("Key pressed")'><BR><BR>
+        <LI>onkeyup: <INPUT TYPE="TEXT" VALUE="Type and release" SIZE="40"
+        onkeyup='alert("Key up")'><BR><BR>
+        <LI>onload:
+         Alert presented on initial document load.<BR><BR>
+        <LI>onmousedown: <INPUT TYPE="BUTTON" VALUE="Click and hold"
+        onmousedown='alert("Mouse down")'><BR><BR>
+        <LI>onmousemove: Move mouse over this
+        <A HREF=""onmousemove='alert("Mouse moved")'>link</A><BR><BR>
+        <LI>onmouseout: Position mouse
+        <A HREF=""onmouseout='alert("Mouse out")'>here</A> and now leave.<BR><BR>
+        <LI>onmouseover: Position mouse over this
+        <A HREF=""onmouseover='alert("Mouse over")'>link</A><BR><BR>
+        <LI>onmouseup: <INPUT TYPE="BUTTON" VALUE="Click and release"
+        onmouseup='alert("Mouse up")'><BR><BR>
+        <LI>onreset: <INPUT TYPE="RESET" VALUE="Reset Demo"><BR><BR>
+        <LI>onselect: <INPUT TYPE="TEXT" VALUE="Select this text" SIZE="40"
+        onselect='alert("Selected")'><BR><BR>
+        <LI>onsubmit: <INPUT TYPE="Submit" VALUE="Test Submit"><BR><BR>
+        <LI>onunload: Try to leave document by following this
+        <A HREF="http://www.yahoo.com">link</A>.<BR><BR>
+        </UL>
+    </FORM>
+</BODY>
+</HTML>
+        
