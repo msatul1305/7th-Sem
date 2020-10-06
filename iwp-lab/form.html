@@ -18,10 +18,10 @@
     <div class="container">
        <div class="row justify-content-center">
     <form action="#" method="POST">
-        First name:  <input type="text" id="fname" required><br>
-        Middle name:<input type="text" id="mname"><br>
-        Last name: <input type="text" id="lname" required><br>
-        Branch: <select name="branch" required>
+        First name:  <input type="text" id="fname" class="form-control" required><br>
+        Middle name:<input type="text" id="mname" class="form-control"><br>
+        Last name: <input type="text" id="lname" class="form-control" required><br>
+        Branch: <select name="branch" class="form-control" required>
             <option value="">select</option>
             <option value="Civil Engineering">Civil Engineering</option>
             <option value="Chemical Engineering">Chemical Engineering</option>
@@ -37,7 +37,9 @@
             Gender:<input type="radio" name="gender" value="male" required>Male
             <input type="radio" name="gender" value="female">Female<br>
             Registration No: <input type="number" id="reg" required><br>
-            Semester: <select name="semester" required>
+                <div class="form-group">
+
+            Semester: <select name="semester" class="form-control" required>
                     <option value="">select</option>
                     <option value="1st">1st</option>
                     <option value="2nd">2nd</option>
@@ -47,11 +49,14 @@
                     <option value="6th">6th</option>
                     <option value="7th">7th</option>
                     <option value="8th">8th</option>
-                </select><br>
-                 <br>Email<input type="email" onclick="check()">
+                </select>        </div>
+<br>
+                 <br>Email<input type="email" class="form-control" onclick="check()">
+        <div class="form-group">
                 Category: <input type="radio" name="cat" value="Regular boarder" required>Regular boarder
                 <input type="radio" name="cat" value="Regular dayscholar">Regular dayscholar
                 <input type="radio" name="cat" value="SSC">SSC<br>
+        </div>
                 Backlogs: <input type="radio" name="back" value="Yes" required>Yes
                 <input type="radio" name="back" value="No" checked>No
                 <br>Bank Details:
@@ -71,7 +76,7 @@
 </body>
 <script>
     function check(){
-        var reg=document.getElementById("reg");
+    var reg=document.getElementById("reg");
     var fname=document.getElementById("fname");
     // var mname=document.getElementById("mname");
     var lname=document.getElementById("lname");
@@ -92,8 +97,7 @@
             else{
                 alert("please enter only alphabets in name field");
                 return false;
-            }
-        
+            }   
             
 }
 </script>
